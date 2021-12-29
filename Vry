@@ -5,7 +5,7 @@
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
-MYIP=$(wget -qO- icanhazip.com);
+MYIP=$(wget -qO- raw.githubusercontent.com/botifals/Vry/4179be0c1a009caff0ffdd826887ee2502e6716a/Ip);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
 NET=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 source /etc/os-release
